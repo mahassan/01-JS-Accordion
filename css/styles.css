@@ -14,9 +14,9 @@ body{
     font-family: 'Lexend Deca', sans-serif;
 }
 .container{
-   background-color: hsl(292, 16%, 49%);
-   height: 100vh;
+   height: 100%;
    background: url('../assets/images/background-pattern-mobile.svg') repeat-x;
+   background-color: hsl(275, 100%, 97%)
 }
 
 main{
@@ -25,6 +25,10 @@ main{
     background-color: white;
     border-radius: 10px;
     padding:2rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 section h1,
 .content{
