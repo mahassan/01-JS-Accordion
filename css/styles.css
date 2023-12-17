@@ -42,16 +42,20 @@ button{
     text-align: left;
     position: relative;
 }
-.content{
+div:has(.accordion-button){
     border-bottom: 2px solid lightgray;
     background-color: white;
+}
+.plus,
+.minus{
+    /* display: flex;
+    align-content: center; */
 }
 .plus{
     background: url('../assets/images/icon-plus.svg') no-repeat;
     position: absolute;
     width: 30px;
     height: 31px;
-    right:0;
 
 }
 .minus{
