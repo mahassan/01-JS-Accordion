@@ -7,9 +7,16 @@ const headers = document.querySelectorAll(".accordion-header");
     }
     //add a event listener
     header.addEventListener("click", function(e){
-       // console.log(e.target.classList,' its is here')
+        //if the target clicked is not
+        if(e.target !== e.target){
+            console.log(e.target);
+        }
+        //not equal to target to the target clicked
+        //and have no hide class, put hide class
+
+
         if(e.target.classList.contains("accordion-header")){
-            console.log(e.target.nextElementSibling.classList.remove('hide'));
+            e.target.nextElementSibling.classList.toggle('hide')
         }
     })
 })
