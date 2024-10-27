@@ -1,6 +1,5 @@
-const ac = document.querySelectorAll(".accordion");
-
-ac.forEach((x,i) => {
+const accordion = document.querySelectorAll(".accordion");
+accordion.forEach((x,i) => {
   x.addEventListener("click", function(e){
   if(e.currentTarget.classList.contains('open')){
     e.currentTarget.classList.remove('open')
