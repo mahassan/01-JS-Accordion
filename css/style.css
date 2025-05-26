@@ -1,23 +1,13 @@
-body{
-  background-color: hsl(275, 100%, 97%);
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-body + header{
-  background-image: url('../assets/images/background-pattern-mobile.svg');
+header{
+  background: url('../assets/images/background-pattern-mobile.svg') no-repeat;
   width: 100%;
-  height:100px;
-  border:2px solid red;
+  min-height: 232px;
 }
-.accordion{
-    border:1px solid crimson;
-    margin-bottom:5px;
-    padding:5px;
-    height:50px;
-    overflow: hidden;
-  }
-  article header{
-    cursor: pointer;
-  }
-.open{
-    overflow: unset;
-    height: unset;
+article header{
+  background: unset;
 }
