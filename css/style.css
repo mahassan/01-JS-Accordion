@@ -1,10 +1,12 @@
 @import url(../css/variable.css);
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300,500;1,300&display=swap');
-body{
+*{
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
+}
+body{
   background-color: var(--Light-pink);
 }
 .container{
@@ -26,6 +28,7 @@ main{
   align-self: center;
   max-width: 375px;
   border-radius: 10px;
+  padding:10px;
 }
 main h1,
 main h2,
@@ -34,7 +37,6 @@ main h4,
 main h5{
   font-size: 1.7rem;
   font-weight: 500;
-  padding:10px;
   display: flex;
   justify-content: space-between;
   line-height: 2;;
@@ -61,6 +63,10 @@ section{
   width: 98%;
   display: flex;
   flex-direction: column;
+  padding-bottom: 10px;
+}
+p{
+  line-height: 1.4;
 }
 .hidden{
   display: none;
