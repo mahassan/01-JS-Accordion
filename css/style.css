@@ -1,4 +1,13 @@
 @import url(../css/variable.css);
+@import url(../css/media.css);
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;1,300&display=swap');
+body{
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  background-color: var(--Light-pink);
+}
 .container{
   width:100%;
   display: flex;
@@ -10,4 +19,46 @@ header.head{
   width: 100%;
   min-height: 232px;
   max-width: 375px;
+}
+main{
+  background: var(--White);
+  margin:-100px 20px 0;
+  align-self: center;
+  max-width: 375px;
+  border-radius: 10px;
+}
+main h1,
+main h2,
+main h3,
+main h4,
+main h5{
+  font-size: 1.7rem;
+  font-weight: 400;
+  padding:10px;
+}
+main h2,
+main h3,
+main h4,
+main h5{
+  cursor: pointer;
+}
+main h2::after,
+main h3::after,
+main h4::after,
+main h5::after{
+  display: inline-block;
+  content: "";
+  background:url('../assets/images/icon-plus.svg');
+  width: 30px;
+  height: 31px;
+}
+section{
+  border-bottom:2px solid var(--Light-pink);
+  border-radius: 5px;
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+}
+.hidden{
+  display: none;
 }
