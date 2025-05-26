@@ -1,14 +1,13 @@
+@import url(../css/variable.css);
 .container{
   width:100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-header{
+header.head{
   background: url('../assets/images/background-pattern-mobile.svg') no-repeat;
   width: 100%;
   min-height: 232px;
-}
-article header{
-  background: unset;
+  max-width: 375px;
 }
