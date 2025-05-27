@@ -49,18 +49,12 @@ main button{
   line-height: 2;;
   cursor: pointer;
 }
-main h2,
-main h3,
-main h4,
-main h5{
+main h2{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-main h2 span,
-main h3 span,
-main h4 span,
-main h5 span{
+main h2 span{
   display: inline-block;
   background:url('../assets/images/icon-plus.svg');
   width: 30px;
