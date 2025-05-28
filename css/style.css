@@ -19,14 +19,14 @@ button{
   flex-direction: column;
   align-items: center;
 }
-header.head{
+.head{
   background: url('../assets/images/background-pattern-mobile.svg') no-repeat;
   width: 100%;
   min-height: 232px;
   max-width: 375px;
   margin-bottom: 10px;
 }
-main header h1{
+main h1{
   font-size: 1.7rem;
   font-weight: 500;
   margin-bottom: 20px;
@@ -53,12 +53,19 @@ main h2{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
 }
-main h2 span{
+.icon-minus,
+.icon-plus{
   display: inline-block;
-  background:url('../assets/images/icon-plus.svg');
   width: 30px;
   height: 31px;
+}
+.icon-plus{
+  background:url('../assets/images/icon-plus.svg');
+}
+.icon-minus{
+  background:url('../assets/images/icon-minus.svg');
 }
 section{
   border-bottom:2px solid var(--Light-pink);
@@ -75,7 +82,7 @@ p{
   display: none;
 }
 @media (min-width: 375px) {
-    header.head{
+    .head{
         background:url('../assets/images/background-pattern-desktop.svg');
         max-width:1440px ;
         max-height: 32px;
