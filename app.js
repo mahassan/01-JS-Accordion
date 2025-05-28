@@ -3,6 +3,14 @@ var para = document.querySelectorAll("section p");
 accordionHeader.forEach(function (header) {
     header.addEventListener("click", function () {
         var section = header;
+        var title = section.children;
+        var toggleIcon = title[0].children[1];
+        if (toggleIcon.classList.contains("icon-plus")) {
+            toggleIcon.classList.replace("icon-plus", "icon-minus");
+        }
+        else {
+            toggleIcon.classList.replace("icon-minus", "icon-plus");
+        }
         section.children[1].classList.toggle('hidden');
     });
 });
