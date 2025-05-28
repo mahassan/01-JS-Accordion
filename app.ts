@@ -8,11 +8,11 @@ accordionHeader.forEach((header)=>{
       const toggleIcon = title[0].children[1] as Element;
       if(toggleIcon.classList.contains("icon-plus")){
         toggleIcon.classList.replace("icon-plus","icon-minus");
+        section.children[1].classList.replace("hidden","showing");
       }else{
          toggleIcon.classList.replace("icon-minus","icon-plus");
+          section.children[1].classList.replace("showing","hidden");
       }
-
-      section.children[1].classList.toggle('hidden');
     })
 })
 
