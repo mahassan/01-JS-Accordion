@@ -1,0 +1,105 @@
+@import url(../css/variable.css);
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300,500;1,300&display=swap');
+*{
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+body{
+  background-color: var(--Light-pink);
+}
+button{
+  background: none;
+  border: 0;
+  text-align: left;
+}
+.container{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.head{
+  background: url('../assets/images/background-pattern-mobile.svg') no-repeat;
+  width: 100%;
+  min-height: 232px;
+  max-width: 375px;
+  margin-bottom: 10px;
+}
+main h1{
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+main{
+  background: var(--White);
+  margin:-100px 20px 0;
+  align-self: center;
+  max-width: 375px;
+  border-radius: 10px;
+  padding:10px;
+}
+main button,
+main button,
+main button,
+main button,
+main button{
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 2;;
+  cursor: pointer;
+}
+main h2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.icon-minus,
+.icon-plus{
+  display: inline-block;
+  width: 30px;
+  height: 31px;
+}
+.icon-plus{
+  background:url('../assets/images/icon-plus.svg');
+}
+.icon-minus{
+  background:url('../assets/images/icon-minus.svg');
+}
+section{
+  border-bottom:2px solid var(--Light-pink);
+  border-radius: 5px;
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+p{
+  line-height: 1.4;
+}
+.active{
+  max-height: 0;
+  padding: 0 1rem;
+  transition: 
+    max-height 2s ease, 
+    padding 3s ease;
+
+  overflow: hidden;
+}
+.non-active{
+  display: block;
+  max-height: 200px;
+  padding: 1rem;
+}
+@media (min-width: 375px) {
+    .head{
+        background:url('../assets/images/background-pattern-desktop.svg');
+        max-width:1440px ;
+        max-height: 32px;
+    }
+    main{
+        max-width: 750px;
+    }
+}
