@@ -7,16 +7,17 @@ accordionHeader.forEach(function (header) {
         var toggleIcon = title[0].children[1];
         if (toggleIcon.classList.contains("icon-plus")) {
             toggleIcon.classList.replace("icon-plus", "icon-minus");
+            section.children[1].classList.replace("active", "non-active");
         }
         else {
             toggleIcon.classList.replace("icon-minus", "icon-plus");
+            section.children[1].classList.replace("non-active", "active");
         }
-        section.children[1].classList.toggle('hidden');
     });
 });
 window.addEventListener("DOMContentLoaded", function () {
     para.forEach(function (paragraph) {
         var p = paragraph;
-        p.classList.add("hidden");
+        p.classList.add("active");
     });
 });

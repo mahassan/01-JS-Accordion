@@ -79,20 +79,19 @@ section{
 p{
   line-height: 1.4;
 }
-.hidden{
-  display: none;
+.active{
+  max-height: 0;
+  padding: 0 1rem;
+  transition: 
+    max-height 2s ease, 
+    padding 3s ease;
+
+  overflow: hidden;
 }
-.showing{
+.non-active{
   display: block;
-  animation: animate 2s ease-in;
-}
-@keyframes animate {
-  from{
-    height:0;
-  }
-  to{
-    height:100%;
-  }
+  max-height: 200px;
+  padding: 1rem;
 }
 @media (min-width: 375px) {
     .head{

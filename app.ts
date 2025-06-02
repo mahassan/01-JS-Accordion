@@ -8,10 +8,10 @@ accordionHeader.forEach((header)=>{
       const toggleIcon = title[0].children[1] as Element;
       if(toggleIcon.classList.contains("icon-plus")){
         toggleIcon.classList.replace("icon-plus","icon-minus");
-        section.children[1].classList.replace("hidden","showing");
+        section.children[1].classList.replace("active","non-active");
       }else{
          toggleIcon.classList.replace("icon-minus","icon-plus");
-          section.children[1].classList.replace("showing","hidden");
+          section.children[1].classList.replace("non-active","active");
       }
     })
 })
@@ -19,6 +19,6 @@ accordionHeader.forEach((header)=>{
 window.addEventListener("DOMContentLoaded", ()=>{
   para.forEach((paragraph)=>{
     const p = paragraph as HTMLParagraphElement
-    p.classList.add("hidden");
+    p.classList.add("active");
   })
 })
